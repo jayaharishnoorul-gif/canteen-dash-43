@@ -13,6 +13,7 @@ import {
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
 import { Avatar, AvatarFallback } from './ui/avatar';
+import collegeLogo from '@/assets/college-logo.png';
 
 export const Navbar = () => {
   const { user, logout } = useAuth();
@@ -37,10 +38,8 @@ export const Navbar = () => {
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => navigate('/')}
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-            C1
-          </div>
-          <span className="text-xl font-bold tracking-tight">CanteenOne</span>
+          <img src={collegeLogo} alt="College Logo" className="h-10 w-10 object-contain" />
+          <span className="text-xl font-bold tracking-tight">Madras Clg Canteen</span>
         </div>
 
         {user && (

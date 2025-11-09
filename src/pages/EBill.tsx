@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { CheckCircle, Download } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+import collegeLogo from '@/assets/college-logo.png';
 
 export default function EBill() {
   const { id } = useParams<{ id: string }>();
@@ -38,7 +39,10 @@ export default function EBill() {
 
         <Card className="shadow-custom-lg print:shadow-none">
           <CardHeader className="text-center border-b">
-            <CardTitle className="text-2xl">CanteenOne</CardTitle>
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <img src={collegeLogo} alt="College Logo" className="h-12 w-12 object-contain" />
+              <CardTitle className="text-2xl">Madras College Canteen</CardTitle>
+            </div>
             <p className="text-sm text-muted-foreground">E-Bill</p>
           </CardHeader>
           <CardContent className="p-6">

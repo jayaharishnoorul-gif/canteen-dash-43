@@ -1,5 +1,15 @@
 import { User, FoodItem, Order, Notification, EBill } from '@/types';
 
+// Import food images
+import vegThaliImg from '@/assets/veg-thali.jpg';
+import paneerButterMasalaImg from '@/assets/paneer-butter-masala.jpg';
+import samosaImg from '@/assets/samosa.jpg';
+import masalaTeaImg from '@/assets/masala-tea.jpg';
+import coldCoffeeImg from '@/assets/cold-coffee.jpg';
+import choleBhatureImg from '@/assets/chole-bhature.jpg';
+import dosaImg from '@/assets/dosa.jpg';
+import pavBhajiImg from '@/assets/pav-bhaji.jpg';
+
 // Demo food data
 const DEMO_FOODS: FoodItem[] = [
   {
@@ -8,7 +18,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Meals',
     description: 'Complete meal with rice, sabzi, chapati, dal, and salad',
     price: 80,
-    image: '/placeholder.svg',
+    image: vegThaliImg,
     createdAt: Date.now(),
   },
   {
@@ -17,7 +27,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Meals',
     description: 'Creamy paneer curry with butter and spices',
     price: 120,
-    image: '/placeholder.svg',
+    image: paneerButterMasalaImg,
     createdAt: Date.now(),
   },
   {
@@ -26,7 +36,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Snacks',
     description: 'Crispy potato-filled samosas',
     price: 25,
-    image: '/placeholder.svg',
+    image: samosaImg,
     createdAt: Date.now(),
   },
   {
@@ -35,7 +45,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Drinks',
     description: 'Hot masala chai with aromatic spices',
     price: 15,
-    image: '/placeholder.svg',
+    image: masalaTeaImg,
     createdAt: Date.now(),
   },
   {
@@ -44,7 +54,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Drinks',
     description: 'Iced coffee with milk and sugar',
     price: 50,
-    image: '/placeholder.svg',
+    image: coldCoffeeImg,
     createdAt: Date.now(),
   },
   {
@@ -53,7 +63,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Meals',
     description: 'Spicy chickpeas with fried bread',
     price: 90,
-    image: '/placeholder.svg',
+    image: choleBhatureImg,
     createdAt: Date.now(),
   },
   {
@@ -62,7 +72,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Meals',
     description: 'Crispy rice crepe with chutney and sambar',
     price: 60,
-    image: '/placeholder.svg',
+    image: dosaImg,
     createdAt: Date.now(),
   },
   {
@@ -71,7 +81,7 @@ const DEMO_FOODS: FoodItem[] = [
     category: 'Snacks',
     description: 'Spicy vegetable curry with buttered bread',
     price: 70,
-    image: '/placeholder.svg',
+    image: pavBhajiImg,
     createdAt: Date.now(),
   },
 ];
